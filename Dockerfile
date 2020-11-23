@@ -78,7 +78,6 @@ WORKDIR /etc/nginx
 COPY nginx.conf ./
 
 RUN nginx -t
-RUN nginx -V
 
 EXPOSE 80
 EXPOSE 443/tcp
