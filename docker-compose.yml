@@ -1,0 +1,9 @@
+version: '3'
+services:
+  web:
+    # network_mode: bridge
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "8089:80/tcp"
